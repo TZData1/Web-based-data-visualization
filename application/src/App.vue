@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/lumos_logo.svg">
-    <h1> Random numbers</h1>
-    <line-chart :data="chartData"></line-chart>
-    <line-chart :data="chartData"></line-chart>
+    <header>
+        <Navbar />
+    <!-- <img alt="Vue logo" src="./assets/lumos_logo.svg"> 
+    <line-chart :data="chartData"></line-chart> -->
 
+    </header>
+        <input type="text" v-model="test">
+        <p contenteditable="true">{{fetch}}</p>
   </div>
 </template>
 
+
 <script>
+import Navbar from './components/Navbar';
+
 export default {
   name: 'App',
   data() {
@@ -24,25 +30,44 @@ export default {
         '08/2020': 40,
         '09/2020': 100,
         '010/2020': 90,
-      }
+      },
+      test: 2
     }
+  },
+  methods: {
+    fetch2() {
+
+    }
+  },
+  computed: {
+    fetch() {
+      return this.test * 2
+    }
+  },
+  watch: {
+    test: function() {
+      console.log("Changed value!")
+    }
+  },
+  components: {
+    Navbar
   }
 }
 </script>
 
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+}
+header {
+  width: 100vw;
+  background-color: rgb(24, 24, 24);
+  padding: 15px
 }
 </style>
-
-
-<!-- 
-
--->
