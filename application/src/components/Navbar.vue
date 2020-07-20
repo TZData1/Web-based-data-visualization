@@ -18,27 +18,27 @@ export default {
             services: [ 
                 {
                     title: 'Academy',
-                    link: '#'
+                    link: 'academy'
                 },
                 {
                     title: 'Finance',
-                    link: '#'
+                    link: 'finance'
                 },
                                 {
                     title: 'HR',
-                    link: '#'
+                    link: 'hr'
                 },
                                 {
                     title: 'Marketing',
-                    link: '#'
+                    link: 'marketing'
                 },
                 {
                     title: 'Recruiting',
-                    link: '#'
+                    link: 'recruiting'
                 },
                                 {
                     title: 'Sales',
-                    link: '#'
+                    link: 'sales'
                 }
             ]
         }

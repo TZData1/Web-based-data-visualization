@@ -6,10 +6,11 @@
 
 
     </header>
+        <router-view />
         <input type="text" v-model="test">
+
         <p contenteditable="true">{{fetch}}</p>
-        <line-chart :data="chartData1"></line-chart>
-        <bar-chart :data="chartData2"></bar-chart>
+
   </div>
 </template>
 
@@ -83,5 +84,10 @@ header {
   width: 100vw;
   background-color: rgb(24, 24, 24);
   padding: 15px
+}
+.div-head {
+  display: grid;
+  place-items: center;
+  color:#ffffff;
 }
 </style>
