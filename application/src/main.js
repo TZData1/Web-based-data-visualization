@@ -9,10 +9,12 @@ import Recruiting from './views/Recruiting.vue'
 import Sales from './views/Sales.vue'
 import Chartkick from 'vue-chartkick'
 import Chart from 'chart.js'
+import Trend from 'vuetrend'
 import BootstrapVue from 'bootstrap-vue'
 
 Vue.use(VueRouter)
 Vue.use(Chartkick.use(Chart))
+Vue.use(Trend)
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
