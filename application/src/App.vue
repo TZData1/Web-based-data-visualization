@@ -17,17 +17,23 @@
 
     <router-view />
     <Peek :data1="chartData5" :data2="chartData6" :data3="chartData7" :data4="chartData8" />
-
+    <MainVisual :data="chartData1"/>
   </div>
 </template>
 
 
 <script>
 import Navbar from './components/Navbar';
-import Peek from './components/Peek'
+import Peek from './components/Peek';
+import MainVisual from './components/MainVisual'
 
 export default {
   name: 'App',
+  components: {
+    Navbar,
+    Peek,
+    MainVisual
+  },
   data() {
     return {
       chartData1: {
@@ -99,10 +105,6 @@ export default {
     test: function() {
       console.log("Changed value!")
     }
-  },
-  components: {
-    Navbar,
-    Peek
   }
 }
 </script>
@@ -122,7 +124,7 @@ body {
 header {
   width: 100vw;
   background-color: rgb(255, 255, 255);
-  padding: 15px
+  padding: 10px 60px 10px 75px;
 }
 .div-head {
   display: grid;

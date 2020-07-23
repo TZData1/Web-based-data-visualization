@@ -7,6 +7,7 @@ import HR from './views/HR.vue'
 import Marketing from './views/Marketing.vue'
 import Recruiting from './views/Recruiting.vue'
 import Sales from './views/Sales.vue'
+import Home from './views/Home.vue'
 import Chartkick from 'vue-chartkick'
 import Chart from 'chart.js'
 import Trend from 'vuetrend'
@@ -19,7 +20,7 @@ Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
 const routes = [
-  { path: '/app', component: App},
+  { path: '/home', component: Home},
   { path: '/academy', component: Academy},
   { path: '/finance', component: Finance},
   { path: '/hr', component: HR},
