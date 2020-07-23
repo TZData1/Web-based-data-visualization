@@ -2,29 +2,29 @@
     <div class="peek">
         <div class="peekBox" id="first">
             <div class="peekShow">
-                <p class="key"> Mitgliederzahl </p>
                 <p class="value"> 22 </p>
+                <p class="key"> Mitgliederzahl </p>
             </div>  
             <PeekChart :data="data1"/>  
         </div>
         <div class="peekBox" id="second">
             <div class="peekShow">
+                <p class="value"> 11 </p>
                 <p class="key"> Neue Mitglieder</p>
-                <p class="value"> 22 </p>
             </div>  
             <PeekChart :data="data2"/>  
         </div>
         <div class="peekBox" id="third">  
             <div class="peekShow">
-                <p class="key"> Bewerbungen </p>
                 <p class="value"> 0 </p>
+                <p class="key"> Bewerbungen </p>
             </div>   
             <PeekChart :data="data3"/>  
         </div>
         <div class="peekBox" id="fourth">
             <div class="peekShow">
-                <p class="key"> Mitgliederbeschwerden </p>
                 <p class="value"> 0 </p>
+                <p class="key"> Mitgliederbeschwerden </p>
             </div>  
             <PeekChart :data="data4"/>  
         </div>
@@ -59,16 +59,20 @@ export default {
 }
 .peek .peekBox {
     flex: 0 1 50px;
-    margin: 50px 50px;
+    margin: 50px 25px;
     border-radius: 20px;
 }
 .peekBox .key{
     color: #FFFF;
-    margin: 20px 20px 0px 20px 
+    margin: 0px 0px 0px 20px
 }
 .peekBox .value{
     color: #FFFF;
-    margin: 0px 20px 20px 20px
+    margin: 20px 0px 0px 20px;
+    font-size: xx-large;
+}
+.peekBox .wrapper-peakChart{
+    padding: 0px 12px;
 }
 
 

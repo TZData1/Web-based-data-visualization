@@ -16,7 +16,7 @@
     </header>
 
     <router-view />
-    <Peek :data1="chartData1" :data2="chartData2" :data3="chartData3" :data4="chartData4" />
+    <Peek :data1="chartData5" :data2="chartData6" :data3="chartData7" :data4="chartData8" />
 
   </div>
 </template>
@@ -78,7 +78,11 @@ export default {
         '09/2020': 0,
         '010/2020': 0,
       },
-      test: 2
+      test: 2,
+      chartData5: [2, 4, 5, 2, 1, 6],
+      chartData6: [3, 6, 10, 5, 12, 5],
+      chartData7: [2, 3, 10, 15, 13, 4],
+      chartData8: [100, 80, 90, 10, 50]
     }
   },
   methods: {
@@ -105,6 +109,8 @@ export default {
 
 
 <style>
+
+
 * {
   margin: 0;
   padding: 0;
@@ -115,7 +121,7 @@ body {
 }
 header {
   width: 100vw;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(255, 255, 255);
   padding: 15px
 }
 .div-head {
@@ -129,4 +135,6 @@ header {
   grid-template-columns: 50% 50%;
   grid-gap: 50px;
 }
+
+
 </style>

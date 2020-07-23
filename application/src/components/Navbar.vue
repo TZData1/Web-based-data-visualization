@@ -50,6 +50,7 @@ export default {
 
 .img{
     height: 30px;
+    color:#FFF;
 }
 
 nav{
@@ -62,12 +63,12 @@ nav{
 
 nav.menu-item.active,
 nav .menu-item:hover{
-    background-color: rgb(71, 70, 70);
-    border-bottom-color: #FFF;
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(66, 66, 66);
 }
 
 nav .menu-item {
-    color: #FFF;
+    color: rgb(52, 52, 52);
     padding: 10px 20px;
     text-align: center;
     border-bottom: 3px solid transparent;
