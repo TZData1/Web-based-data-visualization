@@ -29,8 +29,7 @@
             <PeekChart :data="data4"/>  
         </div>
     </div>
-    <!-- grid-template-columns: 20% 20% 20% 20%;
-         grid-gap: 50px; -->
+
 </template>
 
 <script>
@@ -58,7 +57,7 @@ export default {
   justify-content: center;
 }
 .peek .peekBox {
-    flex: 0 1 50px;
+    flex: 0 1 20%;
     margin: 50px 25px;
     border-radius: 20px;
 }

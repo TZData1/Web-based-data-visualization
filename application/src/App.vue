@@ -120,6 +120,7 @@ export default {
 }
 body {
   font-family: 'montserrat', sans-serif;
+  background-color: rgb(210, 210, 210);
 }
 header {
   width: 100vw;

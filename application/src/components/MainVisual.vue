@@ -1,10 +1,10 @@
 <template>
     <div class="mainVisual">
         <div>
-        <MainVisualChart :data="data"/>
+            <MainVisualChart :data="data"/>
         </div>
         <div class="mainVisualKeys">
-        abc
+            abc
         </div>
     </div>
 </template>
@@ -27,6 +27,7 @@ export default {
     display: grid;
     grid-template-columns: 70% 20%;
     grid-gap: 50px;
+    margin: 2.5vw 2.5vw;
 }
 
 </style>
