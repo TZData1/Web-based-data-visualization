@@ -7,7 +7,6 @@
 
 <script>
 import Dropdown from './Dropdown'
-
 export default {
     name: 'navbar',
     components: {
@@ -47,26 +46,21 @@ export default {
 </script>
 
 <style>
-
 .img{
     height: 30px;
     color:#FFF;
 }
-
 nav{
     display: flex;
     align-items: center;
-
     position: relative;
     padding: 0px 50px
 }
-
 nav.menu-item.active,
 nav .menu-item:hover{
     background-color: rgb(255, 255, 255);
     border-bottom-color: rgb(66, 66, 66);
 }
-
 nav .menu-item {
     color: rgb(52, 52, 52);
     padding: 10px 20px;
@@ -78,14 +72,8 @@ nav .menu-item {
     margin-left: auto;
     box-sizing: content-box;
 }
-
 nav .menu-item a {
     color: inherit;
     text-decoration:none;
 }
-
-
-
 </style>
-
-

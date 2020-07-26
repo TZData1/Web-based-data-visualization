@@ -57,8 +57,8 @@ export default {
   justify-content: center;
 }
 .peek .peekBox {
-    flex: 0 1 20%;
-    margin: 50px 25px;
+    flex: 0 1 15%;
+    margin: 80px 25px;
     border-radius: 20px;
 }
 .peekBox .key{

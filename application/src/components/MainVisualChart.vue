@@ -1,9 +1,12 @@
 <template>
     <div class="mainVisualChart" >
 
-            <MainVisualMenu class = "mainChartMenuLayout"/> 
+            <MainVisualMenu class = "mainChartMenuLayout"  @update:time="timeUpdate" @update:interval="intervalUpdate"/> 
 
-        <line-chart :data="data"></line-chart>
+        <div > {{time}} </div>
+        <div > {{interval}} </div>
+
+        <line-chart :data="data" ></line-chart>
     </div>
 </template>
 
@@ -15,7 +18,22 @@ export default {
     components: {
         MainVisualMenu
     },
-    props: ["data"]
+    props: ["data"],
+    data () {
+        return {
+            interval: "abc",
+            time: "def"
+        }
+    },
+    methods: {
+        timeUpdate: function(timeEvent) {
+            this.time = timeEvent
+            // this.time = eventTime
+        },
+        intervalUpdate: function(intervalEvent) {
+            this.interval = intervalEvent
+        }
+    }
 }
 </script>
 
@@ -40,7 +58,6 @@ export default {
 
 .mainChartMenuPart {
     display: flex;
-
     padding: 0.25vw 1vw;
 }
 
