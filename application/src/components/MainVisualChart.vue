@@ -2,10 +2,8 @@
     <div class="mainVisualChart" >
 
             <MainVisualMenu class = "mainChartMenuLayout"  @update:time="timeUpdate" @update:interval="intervalUpdate"/> 
-
         <div > {{time}} </div>
         <div > {{interval}} </div>
-
         <line-chart :data="data" ></line-chart>
     </div>
 </template>
@@ -21,8 +19,8 @@ export default {
     props: ["data"],
     data () {
         return {
-            interval: "abc",
-            time: "def"
+            time: "1y",
+            interval: "month"
         }
     },
     methods: {
@@ -65,7 +63,7 @@ export default {
     padding: 0.25vw 1vw;
     border: 1px solid grey;
     justify-content: center;
-
+    cursor: pointer;
 }
 
 #menu-first {

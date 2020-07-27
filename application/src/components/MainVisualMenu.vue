@@ -3,8 +3,9 @@
 
            <div class="mainChartMenuPart" >
                 <div class="mainChartMenuPart-element" v-for="(item, i) in timeElements" :key="i">
-                    <div  class="mainChartMenuPart-elementPart" @click="setTime(item.name)"> {{item.name}} </div>
+                    <div  class="mainChartMenuPart-elementPart" @click="setTime(item.name)" :class="{'first': i === 0}"  > {{item.name}} </div>
                 </div>
+                <!-- first -->
             </div>
 
                 <!-- <div class="mainChartMenuPart-element" id="menu-first">
@@ -78,7 +79,6 @@ export default {
 .mainChartMenuPart-elementPart.hover{
     color:red
 }
-
 
     /* padding: 10px 20px;
     text-align: center;

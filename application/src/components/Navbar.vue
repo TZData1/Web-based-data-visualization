@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <img alt="Vue logo" src="../assets/lumos_logo.svg" class="img">
+        <img alt="Vue logo" src="../assets/lumos_logo.svg" class="img" href="localhost:8080/home">
         <Dropdown title="Select Department"  :items="services" />
     </nav>
 </template>

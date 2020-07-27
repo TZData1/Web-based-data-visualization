@@ -2,17 +2,6 @@
   <div id="app">
     <header>
         <Navbar />
-              <!-- <img alt="Vue logo" src="./assets/lumos_logo.svg">             
-    
-            <input type="text" v-model="test">
-            <p contenteditable="true">{{fetch}}</p>
-          
-            <div class="wrapper1"> 
-                  
-                  
-            </div>  -->
-
-
     </header>
 
     <router-view />
